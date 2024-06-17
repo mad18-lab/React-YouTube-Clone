@@ -18,11 +18,11 @@ const Feed = ({ clicked }) => {
 
     return (
         <div>
-            <div className="flex">
+            <div className="grid grid-flow-col">
                 <div>
                     {clicked === "true" ? <Sidebar2 /> : <Sidebar />}
                 </div>
-                <div className="flex-1 scrollbar-thin">
+                <div>
                     <Videos videos={videos} />
                 </div>
             </div>
