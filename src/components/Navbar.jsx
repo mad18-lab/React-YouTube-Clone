@@ -5,8 +5,7 @@ import { AiOutlineVideoCameraAdd } from "react-icons/ai";
 import { HiMagnifyingGlass } from "react-icons/hi2";
 import { BsBell } from "react-icons/bs";
 import logo from "../assets/images/logo.png"
-import Sidebar from './Sidebar';
-import Sidebar2 from './Sidebar2';
+import Feed from './Feed';
 
 const Navbar = () => {
     const [menuClick, setMenuClick] = useState(false);
@@ -44,7 +43,7 @@ const Navbar = () => {
                 </div>
             </div>
         </div>
-        {menuClick==true ? <Sidebar2 /> : <Sidebar />}
+        {menuClick==true ? <Feed clicked="true" /> : <Feed clicked="false" />}
     </div>
   )
 }
