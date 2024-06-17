@@ -7,8 +7,8 @@ const Videos = ({ videos }) => {
             {videos.map((video, index) => (
                 <div className="flex flex-col gap-2 max-w-[400px]">
                     <img src={video.snippet.thumbnails.high.url} alt="/" className="w-full h-48 object-cover rounded-lg" key={index}/>
-                    <p>{video.snippet.title}</p>
-                    <p>{video.snippet.channelTitle}</p>
+                    <p className="font-semibold">{video.snippet.title}</p>
+                    <p className="text-[#615f5f]">{video.snippet.channelTitle}</p>
                 </div>
             ))}
         </div>
