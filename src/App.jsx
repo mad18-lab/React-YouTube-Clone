@@ -1,5 +1,7 @@
 import React from 'react'
 import Navbar from './components/Navbar'
+import Feed from './components/Feed'
+import DisplayVid from './components/DisplayVid'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 const App = () => {
@@ -8,7 +10,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Navbar />} />
-          <Route path="/home" element={<Navbar />} />
+          <Route path="/video" element={<DisplayVid />} />
         </Routes>
       </BrowserRouter>
     </div>
