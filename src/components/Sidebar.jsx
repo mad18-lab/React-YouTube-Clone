@@ -9,7 +9,7 @@ const Sidebar = () => {
     const [activeIndex, setActive] = useState(0);
   return (
     <div>
-        <div className="fixed left-0 w-20 h-full ml-[5px] bg-white">
+        <div className="fixed left-0 w-20 h-full bg-white">
             <div>
                 <div className="flex flex-col gap-4">
                     <div onClick={() => setActive(1)} className={`rounded-lg w-16 flex flex-col gap-2 items-center justify-center mx-auto p-3 hover:cursor-pointer ${activeIndex === 1 ? 'bg-gray-200' : 'hover:bg-gray-200'}`}>

@@ -19,10 +19,8 @@ const Feed = ({ clicked }) => {
     return (
         <div>
             <div className="flex">
-                <div>
-                    {clicked === "true" ? <Sidebar2 /> : <Sidebar />}
-                </div>
-                <div className="flex-grow ml-20 h-screen overflow-y-auto">
+                {clicked === "true" ? <Sidebar2 /> : <Sidebar />}
+                <div className="ml-20 w-full p-4 h-screen overflow-y-scroll">
                     <Videos videos={videos} />
                 </div>
             </div>
