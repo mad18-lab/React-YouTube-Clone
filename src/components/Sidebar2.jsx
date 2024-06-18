@@ -6,9 +6,9 @@ import { MdSubscriptions } from "react-icons/md";
 const Sidebar2 = () => {
     const [activeIndex, setActive] = useState(0);
   return (
-    <div className="w-[240px] h-screen">
-        <div className="group h-full w-full left-0 overflow-y-auto sticky">
-            <div className="absolute left-0 px-4 overflow-y-auto scrollbar-none group-hover:scrollbar-thin">
+    <div>
+        <div className="group h-full w-[240px] left-0 overflow-y-auto">
+            <div className="absolute left-0 scrollbar-none group-hover:scrollbar-thin overflow-y-auto">
                 <div className="flex flex-col p-4">
                     <div className="flex flex-col gap-2">
                         {Array(20).fill(

@@ -5,14 +5,15 @@ import { AiOutlineVideoCameraAdd } from "react-icons/ai";
 import { HiMagnifyingGlass } from "react-icons/hi2";
 import { BsBell } from "react-icons/bs";
 import logo from "../assets/images/logo.png"
+import user from "../assets/images/user.png"
 import Feed from './Feed';
 
 const Navbar = () => {
     const [menuClick, setMenuClick] = useState(false);
 
   return (
-    <div>
-        <div className="flex justify-between px-4 py-2 items-center sticky">
+    <div className="sticky top-0 z-10 bg-white">
+        <div className="flex justify-between px-4 py-2 items-center sticky top-0">
             <div className="flex gap-5 items-center">
                 <div className="hover:cursor-pointer hover:rounded-full hover:bg-gray-200 p-3">
                     <RxHamburgerMenu size={20} onClick={() => setMenuClick(!menuClick)}/>
@@ -34,12 +35,12 @@ const Navbar = () => {
                 </div>
             </div>
             <div className="flex gap-8 items-center">
-                <div className="flex gap-4">
+                <div className="flex gap-9">
                     <AiOutlineVideoCameraAdd size={24}/>
                     <BsBell size={24}/>
                 </div>
-                <div className="rounded-full p-1 border-2 border-gray-400">
-                    <img src="/" alt="/" />
+                <div className="w-12 h-12 rounded-full p-1">
+                    <img src={user} alt="/" className="object-contain" />
                 </div>
             </div>
         </div>
