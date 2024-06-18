@@ -7,9 +7,12 @@ import { BsBell } from "react-icons/bs";
 import logo from "../assets/images/logo.png"
 import user from "../assets/images/user.png"
 import Feed from './Feed';
+import Input from './Input';
+import LongInput from './LongInput';
 
 const Navbar = () => {
     const [menuClick, setMenuClick] = useState(false);
+    const [searchClick, setSearchClick] = useState(false);
 
   return (
     <div className="sticky top-0 z-10 bg-white">
@@ -25,8 +28,10 @@ const Navbar = () => {
             </div>
             <div className="flex gap-3 items-center">
                 <div className="flex">
-                    <input type="text" id="search" name="search" className="border-gray-300 border-[1px] rounded-bl-3xl rounded-tl-3xl px-3 py-[5px] w-[550px]" placeholder="Search" />
-                    <div className="bg-gray-200 border-gray-300 border-[1px] items-center justify-center mx-auto px-5 py-[10px] rounded-tr-3xl rounded-br-3xl">
+                    <div onFocus={() => setSearchClick(true)} onBlur={() => setSearchClick(false)}>
+                        {searchClick ? <LongInput /> : <Input />}
+                    </div>
+                    <div className="bg-gray-200 border-gray-300 border-[1px] items-center justify-center mx-auto px-5 py-[10px] rounded-tr-3xl rounded-br-3xl h-[40px]">
                         <HiMagnifyingGlass size={20}/>
                     </div>
                 </div>
