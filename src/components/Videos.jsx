@@ -6,10 +6,10 @@ const Videos = ({ videos }) => {
   
   return (
     <div>
-        <div className="grid grid-cols-3 gap-6 p-4 hover:cursor-pointer">
+        <div className="grid grid-cols-3 gap-6 p-4">
             {displayCards.map((card) => (
                 <Link to="/video">
-                  <div className="flex flex-col gap-2 max-w-[400px]">
+                  <div className="flex flex-col gap-2 max-w-[400px] hover:cursor-pointer">
                     <img src={card.url} alt="/" className="w-full h-48 object-cover rounded-lg" key={card.index}/>
                     <p className="font-semibold">{card.title}</p>
                     <p className="text-[#615f5f]">{card.channel}</p>

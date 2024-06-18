@@ -18,9 +18,11 @@ const Feed = ({ clicked }) => {
 
     return (
         <div>
-            <div className="flex">
-                {clicked === "true" ? <Sidebar2 /> : <Sidebar />}
-                <div className="ml-20 w-full p-4 h-screen overflow-y-scroll">
+            <div className="flex justify-between">
+                <div>
+                    {clicked === "true" ? <Sidebar2 /> : <Sidebar />}
+                </div>
+                <div className="scrollbar-thin">
                     <Videos videos={videos} />
                 </div>
             </div>
