@@ -22,7 +22,7 @@ const Feed = ({ clicked }) => {
                 <div>
                     {clicked === "true" ? <Sidebar2 /> : <Sidebar />}
                 </div>
-                <div className="scrollbar-thin">
+                <div>
                     <Videos videos={videos} />
                 </div>
             </div>
