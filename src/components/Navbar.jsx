@@ -15,8 +15,8 @@ const Navbar = () => {
     const [searchClick, setSearchClick] = useState(false);
 
   return (
-    <div className="sticky top-0 z-10 bg-white">
-        <div className="flex justify-between px-4 py-2 items-center sticky top-0">
+    <div>
+        <div className="bg-white sticky top-0 z-50 flex justify-between px-4 py-2 items-center w-full">
             <div className="flex gap-5 items-center">
                 <div className="hover:cursor-pointer hover:rounded-full hover:bg-gray-200 p-3">
                     <RxHamburgerMenu size={20} onClick={() => setMenuClick(!menuClick)}/>
