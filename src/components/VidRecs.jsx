@@ -20,7 +20,9 @@ const VidRecs = ({ sidebar }) => {
 }
 
 const sideVideos = (sidebar) => {
-    return sidebar.map((side, index) => ({ url: side.snippet.thumbnails.high.url, key: index, title: side.snippet.title, channel: side.snippet.channelTitle }));
+    return sidebar.map((side, index) => 
+        ({ url: side.snippet.thumbnails.high.url, key: index, title: side.snippet.title, 
+            channel: side.snippet.channelTitle }));
 }
 
 export default VidRecs

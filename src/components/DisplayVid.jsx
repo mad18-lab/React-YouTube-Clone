@@ -13,7 +13,7 @@ const DisplayVid = () => {
       setSideVids(data.items);
     };
 
-    fetchVideos().catch(error => console.error());
+    fetchVideos().catch(error => console.error(error));
   }, []);
 
   return (
